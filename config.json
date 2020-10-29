@@ -1,0 +1,23 @@
+{
+  "project_name": "PhageBact",
+  "data_dir": "/zfssz2/ST_MCHRI/BIGDATA/USER/ai/data/phage-bact/one-hot-raw",
+  "data_fixwinlen_dirk3": "/zfssz2/ST_MCHRI/BIGDATA/USER/zhannianji/phage-bac/data_pre/1016_win_count/count_kmer3_dir1",
+  "data_fixwinlen_dirk4": "/zfssz2/ST_MCHRI/BIGDATA/USER/zhannianji/phage-bac/data_pre/1016_win_count/count_kmer4_dir",
+  "data_meta_info": "/zfssz2/ST_MCHRI/BIGDATA/USER/ai/data/phage-bact/one-hot-raw/related_bp_file.csv",
+  "data_phage_bact_protein_dir": "/zfssz2/ST_MCHRI/BIGDATA/USER/ai/data/phage-bact/phage_bacterium_protein",
+  "hparams": {
+    "batch_size": 32,
+    "lr": 0.001,
+    "dropout": 0.5
+  },
+  "trnparams": {
+    "epochs": 100,
+    "multi_gpu": false,
+    "n_cups": 10
+  },
+  "resparams": {
+    "save_dir": "/zfssz2/ST_MCHRI/BIGDATA/USER/baiyong/phage-bact/results",
+    "save_final_dir": "/zfssz2/ST_MCHRI/BIGDATA/USER/baiyong/phage-bact/results/PhageBact/f_models",
+    "tensorboard": true
+  }
+}
