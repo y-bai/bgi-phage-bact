@@ -123,7 +123,7 @@ def main(in_args):
     count = 0
     for param in model.encoder.parameters():
         count += 1
-        if count < 10:
+        if count < 8:
             param.requires_grad = False
 
     logger.info('number of layers in model.encoder: {}'.format(count))  # count=24

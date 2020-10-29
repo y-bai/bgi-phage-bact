@@ -104,7 +104,7 @@ class Trainer:
                 # train_recall = recall_score(true_y_, pred_y_)
                 # train_precision = precision_score(true_y_, pred_y_)
                 # train_acc = accuracy_score(true_y_, pred_y_)
-
+            # train_loss = train_loss / len(train_dataset)
                 logging.info('{},[{}/{}]:tr_loss={:.4f}'.format(
                     epoch_str, batch_idx+1, len(train_dataset), train_loss))
 
